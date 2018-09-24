@@ -36,7 +36,7 @@ namespace app
       {
         HttpClient client = new HttpClient();
         client.Timeout = TimeSpan.FromSeconds(58);
-        var responseString = client.GetStringAsync("https://tel-bot.000webhostapp.com/check-updates.php");
+        var responseString = client.GetStringAsync("https://tel-bot.000webhostapp.com/updates.php");
       }
       catch (Exception ex) {
         Console.WriteLine(ex.Message);
